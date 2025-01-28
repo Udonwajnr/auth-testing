@@ -73,7 +73,7 @@ app.get(
     scope: ['profile', 'email'],
   })
 );
-app.enable('trust proxy');
+app.enable('trust proxy',1);
 // Callback Route: Handles Google OAuth response
 app.get(
   '/auth/google/callback',
